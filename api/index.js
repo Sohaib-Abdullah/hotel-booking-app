@@ -9,7 +9,6 @@ import wellComeRoute from "./routes/welcome.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import errorHandler from "./middlewares/error-handler.js";
-import { WellComeUser } from "./controller/wellcome.js";
 
 const app = express();
 dotenv.config();
