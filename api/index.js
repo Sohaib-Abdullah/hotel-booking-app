@@ -5,9 +5,11 @@ import authRoute from "./routes/auth.js";
 import usersRoute from "./routes/users.js";
 import hotelsRoute from "./routes/hotels.js";
 import roomsRoute from "./routes/rooms.js";
+import wellComeRoute from "./routes/welcome.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import errorHandler from "./middlewares/error-handler.js";
+import { WellComeUser } from "./controller/wellcome.js";
 
 const app = express();
 dotenv.config();
@@ -33,6 +35,7 @@ app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
 
+app.use("/api", wellComeRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/hotels", hotelsRoute);
