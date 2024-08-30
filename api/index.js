@@ -31,9 +31,7 @@ mongoose.connection.on("connected", () => {
 });
 
 const corsOptions = {
-  origin: [
-    "https://hotel-booking-app-client-lf3vjiqie-sohaib-abdullahs-projects.vercel.app",
-  ],
+  origin: ["https://hotel-booking-app-client.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
   // preflightContinue: false, // access-control-allow-origin: *
