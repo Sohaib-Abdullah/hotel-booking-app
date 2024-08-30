@@ -43,7 +43,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Manually set CORS headers (this is optional as cors middleware already handles this)
-app.use((req, res, next) => {
+// app.use((req, res, next) => {
 //   res.header(
 //     "Access-Control-Allow-Origin",
 //     "https://hotel-booking-app-client.vercel.app"
